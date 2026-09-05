@@ -1,4 +1,4 @@
-# sih-anc training pipeline
+# SIH_ANC Training Pipeline
 
 Run these in order, from inside `D:\sih-anc`, in a terminal (PowerShell or
 Command Prompt).
