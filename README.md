@@ -3,7 +3,7 @@
 Run these in order, from inside `D:\sih-anc`, in a terminal (PowerShell or
 Command Prompt).
 
-## 0. One-time setup
+## 1. One-time setup
 
 ```
 python -m venv venv
@@ -14,7 +14,7 @@ pip install -r requirements.txt
 (`venv\Scripts\activate` needs to be run again every time you open a new
 terminal window.)
 
-## 1. Check your data
+## 2. Check your data
 
 ```
 python check_data.py
@@ -41,7 +41,7 @@ already installed and handles the whole folder at once.)
 
 Don't move on to training until `check_data.py` prints `READY? YES`.
 
-## 2. (Optional) sanity-check the model shape
+## 3. (Optional) sanity-check the model shape
 
 ```
 python model.py
@@ -50,7 +50,7 @@ python model.py
 No data needed -- just confirms the network builds and prints its
 parameter count. Should finish instantly and print "Self-test passed."
 
-## 3. Train
+## 4. Train
 
 ```
 python train.py
@@ -71,7 +71,7 @@ flat from epoch 1, something's wrong upstream (check data.py's assumptions
 against your actual files) -- paste the printed output back and it can be
 debugged from there.
 
-## 4. Listen to the result
+## 5. Listen to the result
 
 ```
 python enhance_test.py
@@ -90,7 +90,7 @@ python enhance_test.py data\speech\some_clip.wav data\noise\some_clip.wav 0
 
 (last number is the SNR in dB -- lower = noisier mix, harder test)
 
-## 5. Export for the Raspberry Pi
+## 6. Export for the Raspberry Pi
 
 ```
 python export_onnx.py
