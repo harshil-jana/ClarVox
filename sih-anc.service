@@ -1,0 +1,16 @@
+[Unit]
+Description=SIH Adaptive Noise Cancellation - real-time denoiser
+After=sound.target
+
+[Service]
+Type=simple
+# CHANGE these three paths/user to match your actual Pi username and where
+# you copied the project folder to (e.g. /home/<you>/sih-anc).
+User=harshil_jana
+WorkingDirectory=/home/harshil_jana/sih-anc
+ExecStart=/home/harshil_jana/anc-venv/bin/python /home/harshil_jana/sih-anc/pi_live_test.py
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
