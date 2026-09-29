@@ -1,0 +1,18 @@
+
+ssh harshil_jana@sih-anc.local
+
+cd ~/sih-anc-code
+source ~/anc-venv/bin/activate
+
+python pi_live_test.py
+
+==========================
+FOR TRANSFERING RECORDINGS FROM RASPBERRY PI TO LAPTOP
+
+scp "harshil_jana@10.76.219.8:~/sih-anc-code/*.wav" "D:\sih-anc\recordings\"
+
+===============================
+FOR CHANGING THE LOCAL NETWORK OF RASPBERRY PI
+
+
+
